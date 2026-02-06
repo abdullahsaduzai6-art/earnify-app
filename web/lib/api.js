@@ -1,6 +1,6 @@
 import { getToken } from './auth';
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE || 'https://earnify-app.vercel.app';
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE || 'https://earnify-server.vercel.app /api';
 
 export async function api(path, { method = 'GET', body } = {}) {
   const token = getToken();
